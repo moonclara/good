@@ -1,0 +1,65 @@
+.banner {
+    background-image: url(../images/banner.png);
+    min-height: calc(100vh - 80px);
+    // min-height: 520px;
+    @include pad{
+        background-position: 75% 75%;
+    }
+
+    h1 {
+        padding-top: 20rem;
+        // padding-top: 10rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+.environment {
+    padding: 5rem 0;
+    padding: 10rem 0;
+
+    @include pad {
+        padding: 3rem 0;
+    }
+
+    .container {
+        max-width: 50%;
+
+        @include pad {
+            max-width: unset;
+        }
+    }
+}
+
+.feature {
+    // padding-top: 2.5rem;
+    // padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 30rem;
+    @include pad{
+        padding-top: 3rem;
+        padding-bottom: 15rem;
+    }
+}
+
+.season {
+    min-height: 800px;
+    background-image: url(../images/package.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 10rem;
+
+    .season-layer {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+        padding-top: 15rem;
+    }
+}
